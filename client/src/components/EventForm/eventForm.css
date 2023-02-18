@@ -1,0 +1,100 @@
+.haspaid {
+
+}
+input[type="checkbox"] {
+    position: relative;
+    width: 70px;
+    height: 30px;
+    -webkit-appearance: none;
+    background: #c6c6c6;
+    outline: none;
+    border-radius: 20px;
+    box-shadow: 0 0 5px rgba(0,0,0,.2);
+    transition: 0.5s;
+    top: 14px;
+}
+input:checked[type="checkbox"] {
+    background: #1d9b21;
+}
+input[type="checkbox"]:before {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 20px;
+    top: px;
+    left: 0;
+    background: #fff;
+    transform: scale(1.1);
+    box-shadow: 0 2px 5px rgba(0,0,0,.2);
+    transition: .5s;
+}
+input:checked[type="checkbox"]:before{
+    left: 40px;
+}
+input {
+    border-radius: 8px;
+    height: 2rem;
+    text-align: center;
+    justify-content: flex-end;
+}
+label {
+    margin-top: 20px;
+    padding: 5px;
+    font-weight: bold;
+    color: #fff;
+    font-size: larger;
+    
+    
+}
+
+.container {
+    background-color: #3174AD;
+    width: 100vw;
+    height: 100vh;
+    justify-content:baseline;
+}
+
+h1 {
+    color: #3174AD;
+    margin-top: 10px;
+
+}
+
+.wrapper {
+    margin-top: 30px;
+    display: block;
+}
+.wrapper1 {
+    padding-top: 20px;
+}
+
+.submitBtn {
+    margin-top: 30px;
+    border-radius: 8px;
+    background: transparent;
+    border: solid 3px white;
+    color: white;
+    font-size: 1.2rem;
+    padding: 10px 15px;
+}
+
+form {
+    top: 8%;
+    
+}
+
+.state {
+    border-radius: 8px;
+    height: 2rem;
+    width:170px;
+    font-size: 1.2rem;
+}
+.paymentMethod {
+    border-radius: 8px;
+    height: 2rem;
+    width: 170px;
+    font-size: 1.2rem;
+}
+
+
