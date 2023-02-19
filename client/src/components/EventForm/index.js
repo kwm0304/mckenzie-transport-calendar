@@ -1,7 +1,7 @@
 import React from 'react';
 import { ErrorMessage, Form, Formik, useField, number, string } from 'formik';
 import * as Yup from 'yup';
-import { Col, Row, Container } from 'react-bootstrap';
+import { Switch } from '@mui/material'
 import './eventForm.css'
 import { Autocomplete } from '@react-google-maps/api'
 
@@ -53,7 +53,6 @@ const EventForm = () => {
     return (
         <>
         <h1>New Event</h1>
-        <Container>
         <Formik
         initialValues={{
             event: [{
@@ -92,6 +91,8 @@ const EventForm = () => {
         })}
         //gets called on submit
         onSubmit={(values, { setSubmitting }) => {
+            setSubmitting(true)
+            //make async call to server
             console.log('submit: ', values)
             setTimeout(() => {
                 alert(JSON.stringify(values, null, 2));
@@ -109,7 +110,6 @@ const EventForm = () => {
                 name='first_name'
                 type='text'
                 placeholder='First*'
-                value={values.first_name}
                 />
                 </div>
                 <div className='wrapper'>
@@ -120,7 +120,6 @@ const EventForm = () => {
                 name='last_name'
                 type='text'
                 placeholder='Last*'
-                value={values.last_name}
                 />
                </div>
                <div className='wrapper'>
@@ -131,7 +130,6 @@ const EventForm = () => {
                 name='customer_email'
                 type='email'
                 placeholder='email@email.com*'
-                value={values.customer_email}
                 />
                 </div>
                 <div className='wrapper'>
@@ -142,7 +140,6 @@ const EventForm = () => {
                 name='store'
                 type='text'
                 placeholder='High Cotton'
-                value={values.store_name}
                 />
                 </div>
                 <div className='wrapper'>
@@ -153,7 +150,6 @@ const EventForm = () => {
                 name='customer_street_address'
                 type='text'
                 placeholder='1234 Fifth St.*'
-                value={values.customer_street_address}
                 />
                 </div>
                 <div className='wrapper'>
@@ -164,12 +160,11 @@ const EventForm = () => {
                 name='customer_city'
                 type='text'
                 placeholder='Concord'
-                value={values.customer_city}
                 />
                 </div>
                 <div className='wrapper'>
                 {/*STATE*/}
-                <SelectInput label='State ' name='customer_state' className='state' value={values.customer_state}>
+                <SelectInput label='State ' name='customer_state' className='state'>
                     <option value="">Select state...</option>
                     <option value="NC">NC</option>
                     <option value="SC">SC</option>
@@ -231,16 +226,15 @@ const EventForm = () => {
                 name='price'
                 type='number'
                 placeholder='100*'
-                value={values.price}
                 />
                 </div>
                 <div className='paid'>
                 {/*PAID?*/}
-                <BooleanInput name='paid' className='' value={values.paid}></BooleanInput>
+                <BooleanInput name='paid' className=''></BooleanInput>
                 </div>
                 <div className='wrapper'>
                 {/*PAYMENT METHOD*/}
-                <SelectInput label='Payment Method ' name='payment-method' className='paymentMethod' value={values.payment_method}>
+                <SelectInput label='Payment Method ' name='payment-method' className='paymentMethod'>
                     <option value='Cash'>Cash</option>
                     <option value='Check'>Check</option>
                     <option value='Stripe'>Stripe</option>
@@ -256,9 +250,11 @@ const EventForm = () => {
             </Form>
             <pre>{JSON.stringify(values, null, 2)}</pre>
         </Formik>
-        </Container>
+        
         </>
     );
 };
+
+
 
 export default EventForm;
