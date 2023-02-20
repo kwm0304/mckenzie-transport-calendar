@@ -33,7 +33,8 @@ const eventSchema = new Schema(
         },
         customerState: {
             type: String,
-            required: true
+            required: true,
+            maxLength: 2
         },
         payments: [paymentSchema]
     }

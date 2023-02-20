@@ -1,0 +1,152 @@
+[
+    {
+        "firstName" : "Jill",
+        "lastName" : "Jones",
+        "customerEmail" : "example@example.com",
+        "storeName" : "Traditions",
+        "customerStreetAddress" : "1234 5th St.",
+        "customerCity" : "Charlotte",
+        "customerState" : "NC",
+        "payments" : [
+            {
+                "price" : 100,
+                "paymentMethod" : "Venmo"
+            }
+        ]
+    },
+    {
+        "firstName" : "Jan",
+        "lastName" : "Jameson",
+        "customerEmail" : "example@yahoo.com",
+        "storeName" : "Rooms-To-Go",
+        "customerStreetAddress" : "12345 6th St.",
+        "customerCity" : "Concord",
+        "customerState" : "NC",
+        "payments" : [
+            {
+                "price" : 500,
+                "paymentMethod" : "Cash"
+            }
+        ]
+    },
+    {
+        "firstName" : "Amy",
+        "lastName" : "Adams",
+        "customerEmail" : "example@gmail.com",
+        "storeName" : "Details",
+        "customerStreetAddress" : "2345 1st St.",
+        "customerCity" : "Cary",
+        "customerState" : "NC",
+        "payments" : [
+            {
+                "price" : 250,
+                "paymentMethod" : "PayPal"
+            }
+        ]
+    },
+    {
+        "firstName" : "Bonnie",
+        "lastName" : "Burton",
+        "customerEmail" : "example@hotmail.com",
+        "storeName" : "Traditions",
+        "customerStreetAddress" : "2323 Jordan Ave.",
+        "customerCity" : "High Point",
+        "customerState" : "NC",
+        "payments" : [
+            {
+                "price" : 300,
+                "paymentMethod" : "Apple Pay"
+            }
+        ]
+    },
+    {
+        "firstName" : "Candice",
+        "lastName" : "Cone",
+        "customerEmail" : "examplez@examplez.com",
+        "storeName" : "Traditions",
+        "customerStreetAddress" : "800 Euclid Ave.",
+        "customerCity" : "Charlotte",
+        "customerState" : "NC",
+        "payments" : [
+            {
+                "price" : 100,
+                "paymentMethod" : "Venmo"
+            }
+        ]
+    },
+    {
+        "firstName" : "Dee",
+        "lastName" : "Dillon",
+        "customerEmail" : "eexample@eexample.com",
+        "storeName" : "Traditions",
+        "customerStreetAddress" : "333 Main St.",
+        "customerCity" : "Durham",
+        "customerState" : "NC",
+        "payments" : [
+            {
+                "price" : 100,
+                "paymentMethod" : "Check"
+            }
+        ]
+    },
+    {
+        "firstName" : "Esther",
+        "lastName" : "Emannuel",
+        "customerEmail" : "example@examples.com",
+        "storeName" : "BD Jefferies",
+        "customerStreetAddress" : "5678 Road St.",
+        "customerCity" : "Concord",
+        "customerState" : "NC",
+        "payments" : [
+            {
+                "price" : 233,
+                "paymentMethod" : "Cash"
+            }
+        ]
+    },
+    {
+        "firstName" : "Fiona",
+        "lastName" : "Fester",
+        "customerEmail" : "anotherexample@anotherexample.com",
+        "storeName" : "Rooms-To-Go",
+        "customerStreetAddress" : "33 Dale Earnhardt Blvd.",
+        "customerCity" : "Kannapolis",
+        "customerState" : "NC",
+        "payments" : [
+            {
+                "price" : 425,
+                "paymentMethod" : "Venmo"
+            }
+        ]
+    },
+    {
+        "firstName" : "Gianna",
+        "lastName" : "George",
+        "customerEmail" : "exampdsfdle@example.com",
+        "storeName" : "Traditions",
+        "customerStreetAddress" : "1660 Pennsylvania Ave.",
+        "customerCity" : "Charlotte",
+        "customerState" : "NC",
+        "payments" : [
+            {
+                "price" : 100,
+                "paymentMethod" : "Venmo"
+            }
+        ]
+    },
+    {
+        "firstName" : "Hillary",
+        "lastName" : "Hofstatter",
+        "customerEmail" : "exampsdfsfdle@example.com",
+        "storeName" : "Details",
+        "customerStreetAddress" : "123456 7th St.",
+        "customerCity" : "Harrisburg",
+        "customerState" : "NC",
+        "payments" : [
+            {
+                "price" : 100,
+                "paymentMethod" : "Check"
+            }
+        ]
+    }
+]
