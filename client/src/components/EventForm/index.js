@@ -202,31 +202,8 @@ const EventForm = () => {
                     <option value="WY">WY</option>
                 </SelectInput>
                 </div>
-                <div className='wrapper'>
-                {/*PRICE*/}
-                <TextInput
-                className='price'
-                label='Price '
-                name='price'
-                type='number'
-                placeholder='100*'
-                />
-                </div>
-                <div>
-                {/*PAYMENT METHOD*/}
-                <SelectInput label='Payment Method ' name='payment-method' className='paymentMethod'>
-                    <option value='Cash'>Cash</option>
-                    <option value='Check'>Check</option>
-                    <option value='Stripe'>Stripe</option>
-                    <option value='Venmo'>Venmo</option>
-                    <option value='PayPal'>PayPal</option>
-                    <option value='Apple Pay'>Apple Pay</option>
-                    <option value='Google Pay'>Google Pay</option>
-                </SelectInput>
-                </div>
                 {/*SUBMIT BTN*/}
-                <button type='submit' className='submitBtn'>Submit</button>
-                
+                <button type='submit' className='submitBtn'>Submit</button>       
             </Form>
             <pre>{JSON.stringify(values, null, 2)}</pre>
         </Formik>
