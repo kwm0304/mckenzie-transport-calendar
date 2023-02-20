@@ -34,20 +34,7 @@ const SelectInput = ({ label, ...props }) => {
     );
 };
 
-const BooleanInput = ({ children, ...props }) => {
-    const [field, meta] = useField({ ...props, type: 'checkbox' });
-    return (
-        <div>
-            <label htmlFor='checkbox-input' label='Paid'>
-            <input type='checkbox' {...field} {...props} />
-            Paid
-            </label>
-            {meta.touched && meta.error ? (
-                <div className='error'>{meta.error}</div>
-            ) : null}
-            </div>
-    );
-};
+
 //taking values, props and state from above functions
 const EventForm = () => {
     return (
@@ -64,8 +51,7 @@ const EventForm = () => {
             customer_city: '',
             customer_state: '',
             price: '',
-            payment_method: '',
-            paid: false
+            payment_method: ''
         }]
         }}
         validationSchema={Yup.object({
@@ -85,9 +71,7 @@ const EventForm = () => {
             price: Yup.number()
                 .required('Required')
                 .positive('Cannot be a negative number')
-                .integer(),
-            paid: Yup.boolean()
-                .required('Required')
+                .integer()
         })}
         //gets called on submit
         onSubmit={(values, { setSubmitting }) => {
@@ -228,11 +212,7 @@ const EventForm = () => {
                 placeholder='100*'
                 />
                 </div>
-                <div className='paid'>
-                {/*PAID?*/}
-                <BooleanInput name='paid' className=''></BooleanInput>
-                </div>
-                <div className='wrapper'>
+                <div>
                 {/*PAYMENT METHOD*/}
                 <SelectInput label='Payment Method ' name='payment-method' className='paymentMethod'>
                     <option value='Cash'>Cash</option>

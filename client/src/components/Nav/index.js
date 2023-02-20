@@ -32,7 +32,6 @@ const Nav = (props) => {
             </div>
         </nav>
     )
-}
-// <FontAwesomeIcon icon="fa-solid fa-map-location-dot" />
-//<FontAwesomeIcon icon="fa-regular fa-calendar-days" />
-//<FontAwesomeIcon icon="fa-solid fa-magnifying-glass-dollar" />
+};
+
+export default Nav;
